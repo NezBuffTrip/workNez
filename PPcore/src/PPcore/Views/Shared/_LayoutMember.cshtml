@@ -125,7 +125,7 @@
                     $('#province_code').trigger("change"); $('#district_code').trigger("change"); $('#subdistrict_code').trigger("change");
                     $("#mail_addressCheckCurrent").prop("checked", true);
                 } else if (act == "Edit") {
-                    setTabColor();
+                    setTabColor(); setAge();
                     setProvinceData();
                     if ($("#mail_address").val() == "") {
                         $("#mail_addressCheckCurrent").prop("checked", true);
@@ -134,7 +134,7 @@
                         $('#mail_address').prop('readonly', false);
                     }
                 } else if ((act == "Details") || (act == "DetailsPersonal")) {
-                    setTabColor();
+                    setTabColor(); setAge();
                     setProvinceData();
                     //setTimeout(function () {
                     //    $('input').each(function () {
